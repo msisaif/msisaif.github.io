@@ -14,7 +14,7 @@
 
 - 🔭 I’m currently working on **[The Message Academy Website](https://messagebd.net/)**.
 
-- 🌱 I’m currently learning **Advance Laravel & Vue JS**.
+- 🌱 I’m currently learning **React & Next**.
 
 - 💬 Ask me about **Laravel, Vue, Api, git**.
 
