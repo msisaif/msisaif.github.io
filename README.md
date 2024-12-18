@@ -24,7 +24,7 @@
   <img align="center" alt="Laravel" height="50" src="https://github.com/msisaif/msisaif/assets/61042251/4ed1b991-c33f-427b-898e-929a05d73643"> &nbsp; &nbsp;
   <img align="center" alt="Vue js" height="50" src="https://github.com/msisaif/msisaif/assets/61042251/a0927812-6a10-497d-9545-cbf66bea4c9b"> &nbsp; &nbsp;
   <img align="center" alt="React" height="50" src="https://github.com/msisaif/msisaif/assets/61042251/c97f9755-0c61-4956-a53c-c78f7fa1ee90"> &nbsp; &nbsp;
-  <img align="center" alt="Next.js" height="50" src="https://github.com/msisaif/msisaif/assets/61042251/c9c724ff-da7b-4436-b80f-bf03cd384acd)"> &nbsp; &nbsp;
+  <img align="center" alt="Next.js" height="50" src="https://github.com/msisaif/msisaif/assets/61042251/c9c724ff-da7b-4436-b80f-bf03cd384acd"> &nbsp; &nbsp;
   <img align="center" alt="Flutter" height="50" src="https://github.com/msisaif/msisaif/assets/61042251/16cbc2cf-8399-4433-97dd-1f05273bc778"> &nbsp; &nbsp;
 </div>
 
