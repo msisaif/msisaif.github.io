@@ -41,9 +41,9 @@
 
 🔭 I’m currently working on **[The Message Academy Website](https://messagebd.net/)**.
 
-🌱 I’m currently learning **DART & Flutter**.
+🌱 I’m currently learning **Python & AI**.
 
-💬 Ask me about **Laravel, React, Next.js, Vue**.
+💬 Ask me about **Laravel, Vue, React, Next.js, Flutter**.
 
 📫 How to reach me: @msisaif
 
