@@ -120,6 +120,14 @@
         color: var(--text);
     }
 
+    @media (max-width: 400px) {
+        .chip {
+            padding: 6px 10px;
+            border-radius: 16px;
+            font-size: 12px;
+        }
+    }
+
     .chip.hl {
         border-color: var(--accent-line);
         background: var(--accent-soft);

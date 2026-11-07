@@ -20,7 +20,7 @@
     "stats": [
         { "value": "10+", "label": "developers I lead" },
         { "value": "25+", "label": "web apps I lead" },
-        { "value": "5+", "label": "mobile apps in production" },
+        { "value": "5+", "label": "mobile apps I lead" },
         { "value": "2.8K+", "label": "Packagist installs" }
     ]
 }
