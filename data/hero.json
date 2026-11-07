@@ -18,8 +18,8 @@
     ],
     "stack": ["Laravel", "Vue", "React", "Next.js", "Flutter", "AWS"],
     "stats": [
-        { "value": "12", "label": "developers I lead" },
-        { "value": "20+", "label": "web apps I lead" },
+        { "value": "10+", "label": "developers I lead" },
+        { "value": "25+", "label": "web apps I lead" },
         { "value": "5+", "label": "mobile apps in production" },
         { "value": "2.8K+", "label": "Packagist installs" }
     ]
