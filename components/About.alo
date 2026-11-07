@@ -2,23 +2,97 @@
     <section id="about">
         <div class="wrap">
             <div class="sec-head"><span class="num">01</span><h2>About</h2></div>
-            <div class="panel about">
-                <template for="para in data.about">
-                    <p><template if="para.label"><b>{{ para.label }}</b> </template>{{ para.text }}</p>
-                </template>
+            <div class="about-grid">
+                <div class="panel about">
+                    <template for="para in data.about.filter((p) => !p.label)">
+                        <p>{{ para.text }}</p>
+                    </template>
+                </div>
+                <div class="side">
+                    <template for="note in data.about.filter((p) => p.label)">
+                        <div class="panel note-card">
+                            <h3>{{ note.label.replace(/:$/, '') }}</h3>
+                            <template if="note.items">
+                                <ul class="dots">
+                                    <template for="item in note.items">
+                                        <li>{{ item }}</li>
+                                    </template>
+                                </ul>
+                            </template>
+                            <template else>
+                                <p>{{ note.text }}</p>
+                            </template>
+                        </div>
+                    </template>
+                </div>
             </div>
         </div>
     </section>
 </template>
 
 <style>
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 16px;
+    }
+
+    @media (max-width: 860px) {
+        .about-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
     .about p {
         margin: 0 0 14px;
         color: #d3dcea;
-        max-width: 760px;
     }
 
     .about p:last-child {
         margin-bottom: 0;
+    }
+
+    .side {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .note-card {
+        flex: 1;
+    }
+
+    .note-card h3 {
+        margin: 0 0 2px;
+        font-size: 17px;
+    }
+
+    .note-card p {
+        margin: 10px 0 0;
+        color: #c9d3e3;
+        font-size: 15px;
+    }
+
+    .note-card ul.dots {
+        margin: 10px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.dots li {
+        position: relative;
+        padding-left: 18px;
+        color: #c9d3e3;
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    ul.dots li::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: var(--amber);
+        font-size: 12px;
+        top: 3px;
     }
 </style>
