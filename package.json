@@ -1,0 +1,14 @@
+{
+    "name": "msisaif-github-io",
+    "private": true,
+    "engines": {
+        "node": ">=22"
+    },
+    "scripts": {
+        "dev": "alo dev",
+        "build": "alo build"
+    },
+    "devDependencies": {
+        "@msilabs/alo": "^1.0.0"
+    }
+}
