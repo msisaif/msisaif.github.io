@@ -83,6 +83,7 @@
     }
 
     .links a {
+        white-space: nowrap;
         text-decoration: none;
         color: var(--muted);
         font-size: 14px;
@@ -231,7 +232,7 @@
         display: none;
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 880px) {
         .links {
             display: none;
         }
