@@ -1,0 +1,42 @@
+<template>
+    <section id="contact">
+        <div class="wrap">
+            <div class="panel contact">
+                <div class="sec-head"><span class="num">06</span><h2>{{ data.contact.heading }}</h2></div>
+                <p>{{ data.contact.text }}</p>
+                <div class="btns">
+                    <a class="btn primary" href="mailto:{{ data.links.email }}">{{ data.links.email }}</a>
+                    <a class="btn" href="{{ data.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn" href="{{ data.links.github }}" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn" href="{{ data.links.msilabs }}" target="_blank" rel="noopener">msilabs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style>
+    .contact {
+        text-align: center;
+        padding: 40px 28px;
+    }
+
+    .contact .sec-head {
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .contact h2 {
+        margin-bottom: 8px;
+    }
+
+    .contact p {
+        color: var(--muted);
+        margin: 0 auto 22px;
+        max-width: 560px;
+    }
+
+    .contact .btns {
+        justify-content: center;
+    }
+</style>

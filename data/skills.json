@@ -1,0 +1,65 @@
+[
+    {
+        "label": "Leadership",
+        "items": [
+            { "text": "Technical Leadership", "primary": true },
+            { "text": "Software Architecture Design & Evaluation", "primary": true },
+            { "text": "Requirements Analysis", "primary": false },
+            { "text": "Team Leadership", "primary": false },
+            { "text": "Mentoring", "primary": false },
+            { "text": "Technical Training", "primary": false }
+        ]
+    },
+    {
+        "label": "Backend",
+        "items": [
+            { "text": "Laravel", "primary": true },
+            { "text": "PHP", "primary": false },
+            { "text": "REST APIs", "primary": false }
+        ],
+        "note": "with Express, Django and FastAPI when needed"
+    },
+    {
+        "label": "Frontend",
+        "items": [
+            { "text": "Vue.js", "primary": false },
+            { "text": "React", "primary": false },
+            { "text": "Next.js", "primary": false },
+            { "text": "JavaScript", "primary": false },
+            { "text": "Tailwind CSS", "primary": false },
+            { "text": "HTML", "primary": false },
+            { "text": "CSS", "primary": false }
+        ]
+    },
+    {
+        "label": "Mobile",
+        "items": [
+            { "text": "Flutter", "primary": false },
+            { "text": "Dart", "primary": false }
+        ],
+        "note": "apps published on Google Play and the App Store"
+    },
+    {
+        "label": "Cloud",
+        "items": [{ "text": "AWS", "primary": true }],
+        "note": "EC2, S3, RDS, Route 53, IAM, CloudFront"
+    },
+    {
+        "label": "Databases",
+        "items": [
+            { "text": "MySQL", "primary": false },
+            { "text": "Database Design", "primary": false }
+        ],
+        "note": "with PostgreSQL, MongoDB and Redis when needed"
+    },
+    {
+        "label": "Architecture",
+        "items": [
+            { "text": "Distributed Systems", "primary": false },
+            { "text": "Cloud Computing", "primary": false },
+            { "text": "Object Oriented Design", "primary": false },
+            { "text": "UML", "primary": false },
+            { "text": "Agile", "primary": false }
+        ]
+    }
+]

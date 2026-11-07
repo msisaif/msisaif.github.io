@@ -1,0 +1,24 @@
+<template>
+    <section id="about">
+        <div class="wrap">
+            <div class="sec-head"><span class="num">01</span><h2>About</h2></div>
+            <div class="panel about">
+                <template for="para in data.about">
+                    <p><template if="para.label"><b>{{ para.label }}</b> </template>{{ para.text }}</p>
+                </template>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style>
+    .about p {
+        margin: 0 0 14px;
+        color: #d3dcea;
+        max-width: 760px;
+    }
+
+    .about p:last-child {
+        margin-bottom: 0;
+    }
+</style>

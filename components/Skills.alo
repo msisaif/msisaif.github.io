@@ -1,0 +1,71 @@
+<template>
+    <section id="skills">
+        <div class="wrap">
+            <div class="sec-head"><span class="num">04</span><h2>Tech I work with</h2></div>
+            <div class="panel">
+                <dl class="skills">
+                    <template for="row in data.skills">
+                        <div class="skill-row"><dt>{{ row.label }}</dt><dd><template for="item in row.items"><span class="{{ item.primary ? 'p' : '' }}">{{ item.text }}</span></template><template if="row.note"><small>{{ row.note }}</small></template></dd></div>
+                    </template>
+                </dl>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style>
+    .skills {
+        margin: 0;
+    }
+
+    .skill-row {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 12px;
+        padding: 12px 0;
+        border-bottom: 1px dashed var(--line);
+    }
+
+    .skill-row:last-child {
+        border-bottom: 0;
+    }
+
+    .skill-row dt {
+        font-family: var(--mono);
+        font-size: 13px;
+        color: var(--amber);
+        padding-top: 3px;
+    }
+
+    .skill-row dd {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .skill-row dd span {
+        font-size: 14px;
+        padding: 3px 10px;
+        border-radius: 7px;
+        background: var(--bg2);
+        border: 1px solid var(--line);
+    }
+
+    .skill-row dd span.p {
+        border-color: rgba(245, 165, 36, 0.5);
+        color: #ffd58a;
+    }
+
+    .skill-row dd small {
+        color: var(--dim);
+        font-size: 13px;
+        align-self: center;
+    }
+
+    @media (max-width: 600px) {
+        .skill-row {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

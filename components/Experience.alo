@@ -1,0 +1,151 @@
+<template>
+    <section id="experience">
+        <div class="wrap">
+            <div class="sec-head"><span class="num">02</span><h2>Experience</h2></div>
+
+            <div class="panel company">
+                <div class="company-head">
+                    <h3>{{ data.experience.company.name }}</h3>
+                    <span class="meta">{{ data.experience.company.meta }}</span>
+                </div>
+                <div class="timeline">
+                    <template for="role in data.experience.company.roles">
+                        <div class="role-item {{ role.current ? 'current' : '' }}">
+                            <h4>{{ role.title }}</h4>
+                            <span class="meta">{{ role.period }}</span>
+                            <ul class="dots">
+                                <template for="point in role.points">
+                                    <li>{{ point }}</li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <div class="grid3">
+                <template for="venture in data.experience.ventures">
+                    <div class="panel mini">
+                        <span class="tag">{{ venture.tag }}</span>
+                        <h3>{{ venture.name }}</h3>
+                        <span class="meta">{{ venture.period }}</span>
+                        <p>{{ venture.description }}</p>
+                    </div>
+                </template>
+            </div>
+
+            <div class="panel mini volunteer">
+                <span class="tag">{{ data.experience.volunteer.tag }}</span>
+                <h3>{{ data.experience.volunteer.title }}</h3>
+                <span class="meta">{{ data.experience.volunteer.period }}</span>
+                <p>{{ data.experience.volunteer.before }}<a href="{{ data.experience.volunteer.linkHref }}" target="_blank" rel="noopener">{{ data.experience.volunteer.linkLabel }}</a>{{ data.experience.volunteer.after }}</p>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style>
+    .company {
+        margin-bottom: 22px;
+    }
+
+    .company-head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 6px 16px;
+        margin-bottom: 6px;
+    }
+
+    .company-head h3 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .meta {
+        font-family: var(--mono);
+        font-size: 13px;
+        color: var(--muted);
+    }
+
+    .timeline {
+        position: relative;
+        margin: 18px 0 0 6px;
+        padding-left: 24px;
+        border-left: 2px solid var(--line);
+    }
+
+    .role-item {
+        position: relative;
+        padding-bottom: 24px;
+    }
+
+    .role-item:last-child {
+        padding-bottom: 0;
+    }
+
+    .role-item::before {
+        content: '';
+        position: absolute;
+        left: -31px;
+        top: 7px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--bg);
+        border: 2px solid var(--muted);
+    }
+
+    .role-item.current::before {
+        border-color: var(--amber);
+        background: var(--amber);
+    }
+
+    .role-item h4 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .role-item .meta {
+        display: block;
+        margin: 2px 0 8px;
+    }
+
+    ul.dots {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.dots li {
+        position: relative;
+        padding-left: 18px;
+        color: #c9d3e3;
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    ul.dots li::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: var(--amber);
+        font-size: 12px;
+        top: 3px;
+    }
+
+    .mini h3 {
+        margin: 0 0 2px;
+        font-size: 17px;
+    }
+
+    .mini p {
+        margin: 10px 0 0;
+        color: #c9d3e3;
+        font-size: 15px;
+    }
+
+    .volunteer {
+        margin-top: 16px;
+    }
+</style>

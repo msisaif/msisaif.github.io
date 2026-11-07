@@ -1,0 +1,63 @@
+<template>
+    <nav>
+        <div class="wrap">
+            <a class="brand" href="#top">md<span>.</span>saiful<span>.</span>islam</a>
+            <div class="links">
+                <template for="link in data.nav">
+                    <a href="{{ link.href }}">{{ link.label }}</a>
+                </template>
+            </div>
+        </div>
+    </nav>
+</template>
+
+<style>
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(14, 26, 46, 0.86);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line);
+    }
+
+    nav .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    .brand {
+        font-family: var(--mono);
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+    }
+
+    .brand span {
+        color: var(--amber);
+    }
+
+    .links {
+        display: flex;
+        gap: 22px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .links a:hover {
+        color: var(--text);
+    }
+
+    @media (max-width: 760px) {
+        .links {
+            display: none;
+        }
+    }
+</style>

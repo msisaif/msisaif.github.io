@@ -1,0 +1,26 @@
+{
+    "name": "Md Saiful Islam",
+    "roleBold": "Tech Lead @ Digit Gate IT",
+    "roleRest": "Founder, msilabs · Co-Founder, Orbeetal & Ihsan IT",
+    "leadLine": "Lead teams. Build products.",
+    "leadEmphasis": "Help developers grow.",
+    "chips": [
+        { "label": "Tech Lead", "highlight": false },
+        { "label": "Tech Entrepreneur", "highlight": false },
+        { "label": "Certified Software Architecture Trainer (B-TopSE)", "highlight": true }
+    ],
+    "photoAlt": "Md Saiful Islam",
+    "whoami": [
+        { "key": "role", "value": "Tech Lead" },
+        { "key": "company", "value": "Digit Gate IT" },
+        { "key": "trainer", "value": "B-TopSE Software Architecture" },
+        { "key": "building", "value": "msilabs (open source)" }
+    ],
+    "stack": ["Laravel", "Vue", "React", "Next.js", "Flutter", "AWS"],
+    "stats": [
+        { "value": "12", "label": "developers I lead" },
+        { "value": "20+", "label": "web apps I lead" },
+        { "value": "5+", "label": "mobile apps in production" },
+        { "value": "2.8K+", "label": "Packagist installs" }
+    ]
+}

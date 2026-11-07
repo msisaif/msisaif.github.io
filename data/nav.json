@@ -1,0 +1,8 @@
+[
+    { "href": "#about", "label": "About" },
+    { "href": "#experience", "label": "Experience" },
+    { "href": "#open-source", "label": "Open source" },
+    { "href": "#skills", "label": "Skills" },
+    { "href": "#certifications", "label": "Certifications" },
+    { "href": "#contact", "label": "Contact" }
+]

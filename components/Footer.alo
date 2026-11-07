@@ -1,0 +1,22 @@
+<template>
+    <footer>
+        <span class="mono">© <span class="year">2026</span> {{ data.site.name }}</span> · {{ data.site.location }}
+    </footer>
+</template>
+
+<style>
+    footer {
+        padding: 28px 0 40px;
+        text-align: center;
+        font-size: 13px;
+        color: var(--dim);
+    }
+
+    footer .mono {
+        font-family: var(--mono);
+    }
+</style>
+
+<script>
+    $el.querySelector('.year').textContent = new Date().getFullYear();
+</script>

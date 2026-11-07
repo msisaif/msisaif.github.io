@@ -1,0 +1,104 @@
+<template>
+    <section id="open-source">
+        <div class="wrap">
+            <div class="sec-head"><span class="num">03</span><h2>Open source</h2></div>
+            <div class="grid2">
+                <template for="pkg in data.openSource.packages">
+                    <div class="panel pkg">
+                        <span class="tag">{{ pkg.tag }}</span>
+                        <h3>{{ pkg.name }}</h3>
+                        <p>{{ pkg.description }}</p>
+                        <div class="cmd">{{ pkg.command }}</div>
+                        <div class="feat">
+                            <template for="feature in pkg.features">
+                                <span>{{ feature }}</span>
+                            </template>
+                        </div>
+                        <div class="lnks">
+                            <template for="link in pkg.links">
+                                <a href="{{ link.href }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <p class="note">{{ data.openSource.noteBefore }}<a href="{{ data.openSource.noteLinkHref }}" target="_blank" rel="noopener">{{ data.openSource.noteLinkLabel }}</a>.</p>
+        </div>
+    </section>
+</template>
+
+<style>
+    .pkg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pkg h3 {
+        font-family: var(--mono);
+        font-size: 18px;
+        margin: 0 0 6px;
+    }
+
+    .pkg p {
+        margin: 0 0 14px;
+        color: #c9d3e3;
+        font-size: 15px;
+    }
+
+    .cmd {
+        font-family: var(--mono);
+        font-size: 13px;
+        background: #0a1424;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px 12px;
+        color: #ffd58a;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 14px;
+    }
+
+    .cmd::before {
+        content: '$ ';
+        color: var(--dim);
+    }
+
+    .pkg .feat {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 16px;
+    }
+
+    .pkg .feat span {
+        font-size: 12px;
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: var(--bg2);
+        border: 1px solid var(--line);
+        color: var(--muted);
+    }
+
+    .pkg .lnks {
+        margin-top: auto;
+        display: flex;
+        gap: 16px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .pkg .lnks a {
+        text-decoration: none;
+        color: #ffd58a;
+    }
+
+    .pkg .lnks a:hover {
+        text-decoration: underline;
+    }
+
+    .note {
+        font-size: 13px;
+        color: var(--dim);
+        margin-top: 14px;
+    }
+</style>

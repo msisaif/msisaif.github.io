@@ -1,0 +1,71 @@
+<template>
+    <section id="certifications">
+        <div class="wrap">
+            <div class="sec-head"><span class="num">05</span><h2>Certifications &amp; education</h2></div>
+            <div class="grid2 columns">
+                <div class="panel">
+                    <template for="cert in data.certifications.left">
+                        <div class="cert"><span class="yr">{{ cert.year }}</span><div><h4><template if="cert.star"><span class="badge-star">★</span> </template>{{ cert.title }}</h4><p>{{ cert.issuer }}</p><template if="cert.credential"><a href="{{ cert.credential }}" target="_blank" rel="noopener">Show credential →</a></template></div></div>
+                    </template>
+                </div>
+                <div class="panel">
+                    <template for="cert in data.certifications.right">
+                        <div class="cert"><span class="yr">{{ cert.year }}</span><div><h4><template if="cert.star"><span class="badge-star">★</span> </template>{{ cert.title }}</h4><p>{{ cert.issuer }}</p><template if="cert.credential"><a href="{{ cert.credential }}" target="_blank" rel="noopener">Show credential →</a></template></div></div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style>
+    .columns {
+        align-items: start;
+    }
+
+    .cert {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .cert:last-child {
+        border-bottom: 0;
+    }
+
+    .cert .yr {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--muted);
+        min-width: 74px;
+        padding-top: 3px;
+    }
+
+    .cert h4 {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .cert p {
+        margin: 2px 0 0;
+        font-size: 13px;
+        color: var(--muted);
+    }
+
+    .cert a {
+        color: #ffd58a;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .cert a:hover {
+        text-decoration: underline;
+    }
+
+    .badge-star {
+        color: var(--amber);
+    }
+</style>

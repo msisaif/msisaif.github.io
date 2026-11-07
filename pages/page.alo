@@ -1,7 +1,16 @@
 <head>
-    <title>{{ data.site.name }}</title>
+    <title>{{ data.site.title }}</title>
+    <meta name="description" content="{{ data.site.description }}">
+    <meta property="og:title" content="{{ data.site.ogTitle }}">
+    <meta property="og:description" content="{{ data.site.ogDescription }}">
 </head>
 
 <template>
-    <h1>{{ data.site.name }}</h1>
+    <Hero />
+    <About />
+    <Experience />
+    <OpenSource />
+    <Skills />
+    <Certifications />
+    <Contact />
 </template>

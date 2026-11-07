@@ -1,0 +1,29 @@
+{
+    "packages": [
+        {
+            "tag": "Laravel · PHP · since Jul 2024",
+            "name": "msilabs/bkash",
+            "description": "A Laravel package for bKash Tokenized Checkout v2, with 2.8K+ installs on Packagist. Payments, full and partial refunds, agreement (one-click) payments, query and search.",
+            "command": "composer require msilabs/bkash",
+            "features": ["Multiple merchants", "Token caching", "Bangla errors", "Sandbox validation", "PHP 8.2–8.5", "Laravel 9–13"],
+            "links": [
+                { "label": "GitHub →", "href": "https://github.com/msilabs/bkash" },
+                { "label": "Packagist →", "href": "https://packagist.org/packages/msilabs/bkash" }
+            ]
+        },
+        {
+            "tag": "Node.js · TypeScript · since Oct 2026",
+            "name": "@msilabs/bkash",
+            "description": "A server-side bKash Tokenized Checkout v2 client for Node.js, Bun, Deno and edge runtimes, with TypeScript types and zero runtime dependencies.",
+            "command": "npm install @msilabs/bkash",
+            "features": ["Zero dependencies", "ESM & CJS", "Pluggable token store", "Express", "NestJS", "Next.js", "Hono"],
+            "links": [
+                { "label": "GitHub →", "href": "https://github.com/msilabs/bkash-js" },
+                { "label": "npm →", "href": "https://www.npmjs.com/package/@msilabs/bkash" }
+            ]
+        }
+    ],
+    "noteBefore": "Community packages, not affiliated with bKash. Free and open source (MIT). More at ",
+    "noteLinkLabel": "github.com/msilabs",
+    "noteLinkHref": "https://github.com/msilabs"
+}
