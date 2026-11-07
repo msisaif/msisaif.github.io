@@ -7,6 +7,11 @@
     <meta property="og:type" content="website">
     <link rel="canonical" href="{{ data.site.url }}/">
     <meta property="og:url" content="{{ data.site.url }}/">
+    <meta property="og:image" content="{{ data.site.url }}/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ data.site.ogImageAlt }}">
+    <meta name="twitter:card" content="summary_large_image">
     <script>
         (function () {
             var root = document.documentElement;
