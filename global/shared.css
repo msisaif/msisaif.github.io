@@ -17,7 +17,7 @@ section {
 
 .sec-head .num {
     font-family: var(--mono);
-    color: var(--amber);
+    color: var(--accent-ink);
     font-size: 14px;
 }
 
@@ -59,9 +59,9 @@ h2 {
 }
 
 .btn.primary {
-    background: var(--amber);
-    color: #1a1405;
-    border-color: var(--amber);
+    background: var(--accent);
+    color: var(--on-accent);
+    border-color: var(--accent);
 }
 
 .btn.primary:hover {
@@ -98,6 +98,6 @@ h2 {
     font-size: 11px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--amber);
+    color: var(--accent-ink);
     margin-bottom: 8px;
 }

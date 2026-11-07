@@ -97,8 +97,8 @@
     }
 
     .role-item.current::before {
-        border-color: var(--amber);
-        background: var(--amber);
+        border-color: var(--accent);
+        background: var(--accent);
     }
 
     .role-item h4 {
@@ -120,7 +120,7 @@
     ul.dots li {
         position: relative;
         padding-left: 18px;
-        color: #c9d3e3;
+        color: var(--text-soft);
         font-size: 15px;
         margin-bottom: 4px;
     }
@@ -129,7 +129,7 @@
         content: '▸';
         position: absolute;
         left: 0;
-        color: var(--amber);
+        color: var(--accent-ink);
         font-size: 12px;
         top: 3px;
     }
@@ -141,7 +141,7 @@
 
     .mini p {
         margin: 10px 0 0;
-        color: #c9d3e3;
+        color: var(--text-soft);
         font-size: 15px;
     }
 

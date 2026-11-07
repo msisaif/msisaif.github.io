@@ -41,18 +41,18 @@
 
     .pkg p {
         margin: 0 0 14px;
-        color: #c9d3e3;
+        color: var(--text-soft);
         font-size: 15px;
     }
 
     .cmd {
         font-family: var(--mono);
         font-size: 13px;
-        background: #0a1424;
+        background: var(--code-bg);
         border: 1px solid var(--line);
         border-radius: 8px;
         padding: 10px 12px;
-        color: #ffd58a;
+        color: var(--accent-tint);
         overflow-x: auto;
         white-space: nowrap;
         margin-bottom: 14px;
@@ -89,7 +89,7 @@
 
     .pkg .lnks a {
         text-decoration: none;
-        color: #ffd58a;
+        color: var(--accent-tint);
     }
 
     .pkg .lnks a:hover {

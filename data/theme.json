@@ -1,0 +1,28 @@
+{
+    "accents": [
+        {
+            "id": "green",
+            "label": "Green"
+        },
+        {
+            "id": "blue",
+            "label": "Blue"
+        },
+        {
+            "id": "purple",
+            "label": "Purple"
+        },
+        {
+            "id": "rose",
+            "label": "Rose"
+        },
+        {
+            "id": "orange",
+            "label": "Orange"
+        },
+        {
+            "id": "amber",
+            "label": "Amber"
+        }
+    ]
+}

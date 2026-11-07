@@ -66,7 +66,7 @@
     .kicker {
         font-family: var(--mono);
         font-size: 13px;
-        color: var(--amber);
+        color: var(--accent-ink);
         letter-spacing: 0.08em;
         text-transform: uppercase;
         margin: 0 0 14px;
@@ -100,7 +100,7 @@
 
     .lead em {
         font-style: normal;
-        color: var(--amber);
+        color: var(--accent-ink);
     }
 
     .chips {
@@ -121,9 +121,9 @@
     }
 
     .chip.hl {
-        border-color: rgba(245, 165, 36, 0.5);
-        background: var(--amber-soft);
-        color: #ffd58a;
+        border-color: var(--accent-line);
+        background: var(--accent-soft);
+        color: var(--accent-tint);
     }
 
     .card-id {
@@ -139,7 +139,7 @@
         height: 116px;
         border-radius: 50%;
         object-fit: cover;
-        border: 3px solid var(--amber);
+        border: 3px solid var(--accent);
         display: block;
         margin-bottom: 16px;
     }
@@ -152,11 +152,11 @@
     }
 
     .term .k {
-        color: #8fb4ff;
+        color: var(--term-key);
     }
 
     .term .s {
-        color: #ffd58a;
+        color: var(--accent-tint);
     }
 
     .term .c {
@@ -187,7 +187,7 @@
         display: block;
         font-size: 28px;
         font-weight: 800;
-        color: var(--amber);
+        color: var(--accent-ink);
         line-height: 1.1;
     }
 

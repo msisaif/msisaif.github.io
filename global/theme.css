@@ -1,0 +1,119 @@
+:root {
+    --a-fill: #01b568;
+    --a-rgb: 1, 181, 104;
+    --a-on: #051b0e;
+    --a-ink-d: #4ad186;
+    --a-ink-l: #02703f;
+    --a-tint-d: #baecca;
+    --a-tint-l: #00502b;
+
+    --bg: #0e1a2e;
+    --bg2: #12213a;
+    --panel: #152742;
+    --line: rgba(148, 170, 210, 0.14);
+    --text: #e7edf7;
+    --text-body: #d3dcea;
+    --text-soft: #c9d3e3;
+    --muted: #9aa8c0;
+    --dim: #6f7f9c;
+    --code-bg: #0a1424;
+    --nav-bg: rgba(14, 26, 46, 0.86);
+    --term-key: #8fb4ff;
+
+    --accent: var(--a-fill);
+    --accent-soft: rgba(var(--a-rgb), 0.12);
+    --accent-line: rgba(var(--a-rgb), 0.5);
+    --on-accent: var(--a-on);
+    --accent-ink: var(--a-ink-d);
+    --accent-tint: var(--a-tint-d);
+}
+
+:root[data-theme='light'] {
+    --bg: #f4f7fb;
+    --bg2: #eaeff7;
+    --panel: #ffffff;
+    --line: rgba(15, 30, 60, 0.12);
+    --text: #0e1a2e;
+    --text-body: #26354f;
+    --text-soft: #33425c;
+    --muted: #4a5a75;
+    --dim: #66768f;
+    --code-bg: #eaeff7;
+    --nav-bg: rgba(244, 247, 251, 0.86);
+    --term-key: #2563eb;
+
+    --accent-ink: var(--a-ink-l);
+    --accent-tint: var(--a-tint-l);
+}
+
+[data-accent='green'] {
+    --a-fill: #01b568;
+    --a-rgb: 1, 181, 104;
+    --a-on: #051b0e;
+    --a-ink-d: #4ad186;
+    --a-ink-l: #02703f;
+    --a-tint-d: #baecca;
+    --a-tint-l: #00502b;
+}
+
+[data-accent='blue'] {
+    --a-fill: #0395fe;
+    --a-rgb: 3, 149, 254;
+    --a-on: #000613;
+    --a-ink-d: #75baff;
+    --a-ink-l: #0465af;
+    --a-tint-d: #c6e1ff;
+    --a-tint-l: #024478;
+}
+
+[data-accent='purple'] {
+    --a-fill: #bc62ed;
+    --a-rgb: 188, 98, 237;
+    --a-on: #020004;
+    --a-ink-d: #d694fd;
+    --a-ink-l: #833ea7;
+    --a-tint-d: #edd2fe;
+    --a-tint-l: #572b6f;
+}
+
+[data-accent='rose'] {
+    --a-fill: #f14e9c;
+    --a-rgb: 241, 78, 156;
+    --a-on: #030001;
+    --a-ink-d: #ff87b9;
+    --a-ink-l: #a72a68;
+    --a-tint-d: #ffcfe0;
+    --a-tint-l: #701f46;
+}
+
+[data-accent='orange'] {
+    --a-fill: #ff8432;
+    --a-rgb: 255, 132, 50;
+    --a-on: #241005;
+    --a-ink-d: #fe9557;
+    --a-ink-l: #9c4700;
+    --a-tint-d: #ffd4bc;
+    --a-tint-l: #6b2f01;
+}
+
+[data-accent='amber'] {
+    --a-fill: #f5a524;
+    --a-rgb: 245, 165, 36;
+    --a-on: #1a1405;
+    --a-ink-d: #f5a524;
+    --a-ink-l: #b45309;
+    --a-tint-d: #ffd58a;
+    --a-tint-l: #92400e;
+}
+
+.theme-btn .moon {
+    display: none;
+}
+
+:root[data-theme='light'] .theme-btn .sun {
+    display: none;
+}
+
+:root[data-theme='light'] .theme-btn .moon {
+    display: block;
+}

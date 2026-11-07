@@ -33,7 +33,7 @@
     .skill-row dt {
         font-family: var(--mono);
         font-size: 13px;
-        color: var(--amber);
+        color: var(--accent-ink);
         padding-top: 3px;
     }
 
@@ -53,8 +53,8 @@
     }
 
     .skill-row dd span.p {
-        border-color: rgba(245, 165, 36, 0.5);
-        color: #ffd58a;
+        border-color: var(--accent-line);
+        color: var(--accent-tint);
     }
 
     .skill-row dd small {

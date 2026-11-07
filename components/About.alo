@@ -45,7 +45,7 @@
 
     .about p {
         margin: 0 0 14px;
-        color: #d3dcea;
+        color: var(--text-body);
     }
 
     .about p:last-child {
@@ -69,7 +69,7 @@
 
     .note-card p {
         margin: 10px 0 0;
-        color: #c9d3e3;
+        color: var(--text-soft);
         font-size: 15px;
     }
 
@@ -82,7 +82,7 @@
     ul.dots li {
         position: relative;
         padding-left: 18px;
-        color: #c9d3e3;
+        color: var(--text-soft);
         font-size: 15px;
         margin-bottom: 4px;
     }
@@ -91,7 +91,7 @@
         content: '▸';
         position: absolute;
         left: 0;
-        color: var(--amber);
+        color: var(--accent-ink);
         font-size: 12px;
         top: 3px;
     }

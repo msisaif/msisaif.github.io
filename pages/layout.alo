@@ -5,6 +5,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://msisaif.github.io">
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var theme = 'dark';
+            var accent = 'green';
+            try {
+                if (localStorage.getItem('theme') === 'light') theme = 'light';
+                var saved = localStorage.getItem('accent');
+                if (saved && /^[a-z]{1,20}$/.test(saved)) accent = saved;
+            } catch (error) {}
+            root.dataset.theme = theme;
+            root.dataset.accent = accent;
+            if (accent === 'custom') {
+                try {
+                    var custom = JSON.parse(localStorage.getItem('accent-custom'));
+                    Object.keys(custom).forEach(function (name) {
+                        root.style.setProperty(name, custom[name]);
+                    });
+                } catch (error) {
+                    root.dataset.accent = 'green';
+                }
+            }
+        })();
+    </script>
 </head>
 
 <template>

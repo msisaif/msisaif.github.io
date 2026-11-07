@@ -51,7 +51,7 @@
     }
 
     .cert a {
-        color: #ffd58a;
+        color: var(--accent-tint);
         font-size: 13px;
         font-weight: 600;
         text-decoration: none;
@@ -62,6 +62,6 @@
     }
 
     .badge-star {
-        color: var(--amber);
+        color: var(--accent-ink);
     }
 </style>
