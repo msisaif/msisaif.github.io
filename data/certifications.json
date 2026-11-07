@@ -7,9 +7,27 @@
             "issuer": "JICA-BCC-BASIS · supervised by TopSE, NII Japan",
             "credential": "https://wallet.openbadge.net/public/credential/62a2ed91-e8ad-88a8-8072-01a13eb79c11"
         },
-        { "year": "Jul 2026", "title": "B-TopSE Basic Series – Architecture 1", "star": false, "issuer": "JICA-BCC-BASIS" },
-        { "year": "Jul 2026", "title": "B-TopSE Basic Series – Agile 1", "star": false, "issuer": "JICA-BCC-BASIS" },
-        { "year": "Jul 2026", "title": "B-TopSE Basic Series – Cloud", "star": false, "issuer": "JICA-BCC-BASIS" },
+        {
+            "year": "Jul 2026",
+            "title": "B-TopSE Basic Series – Architecture 1",
+            "star": false,
+            "issuer": "JICA-BCC-BASIS",
+            "credential": "https://wallet.openbadge.net/public/credential/38f4790a-bd9b-8e32-82fe-019f64b7b675"
+        },
+        {
+            "year": "Jul 2026",
+            "title": "B-TopSE Basic Series – Agile 1",
+            "star": false,
+            "issuer": "JICA-BCC-BASIS",
+            "credential": "https://wallet.openbadge.net/public/credential/05d53753-fcbd-8132-9028-019f65a7aa9f"
+        },
+        {
+            "year": "Jul 2026",
+            "title": "B-TopSE Basic Series – Cloud",
+            "star": false,
+            "issuer": "JICA-BCC-BASIS",
+            "credential": "https://wallet.openbadge.net/public/credential/cc0f2dfc-1af0-813a-8d3f-019f64cbdb87"
+        },
         {
             "year": "Mar 2026",
             "title": "AI Engineering Bootcamp for Programmers",
@@ -19,11 +37,38 @@
         }
     ],
     "right": [
-        { "year": "Mar 2025", "title": "App Development with Flutter", "star": false, "issuer": "Ostad" },
-        { "year": "Nov 2024", "title": "Foundational C# with Microsoft", "star": false, "issuer": "freeCodeCamp" },
-        { "year": "Jun 2024", "title": "Reactive Accelerator", "star": false, "issuer": "Learn with Sumit" },
-        { "year": "Apr 2023", "title": "AWS Solutions Architect Associate – Exam Preparation Course", "star": false, "issuer": "Azzda Technology Solution" },
-        { "year": "Feb 2021", "title": "1 Year Diploma in Responsive Web Design & Professional Web Development", "star": false, "issuer": "Creative IT Institute" },
-        { "year": "2014–2019", "title": "BSc in Mechanical Engineering", "star": false, "issuer": "Rajshahi University of Engineering & Technology (RUET)" }
+        {
+            "year": "Mar 2025",
+            "title": "App Development with Flutter",
+            "star": false,
+            "issuer": "Ostad",
+            "credential": "https://ostad.app/share/certificate/c24168-md-saiful-islam"
+        },
+        {
+            "year": "Nov 2024",
+            "title": "Foundational C# with Microsoft",
+            "star": false,
+            "issuer": "freeCodeCamp",
+            "credential": "https://www.freecodecamp.org/certification/msisaif/foundational-c-sharp-with-microsoft"
+        },
+        {
+            "year": "Jun 2024",
+            "title": "Reactive Accelerator",
+            "star": false,
+            "issuer": "Learn with Sumit",
+            "credential": "https://learnwithsumit.com/reports/LWSCTXN-KEBFGND7"
+        },
+        {
+            "year": "Apr 2023",
+            "title": "AWS Solutions Architect Associate – Exam Preparation Course",
+            "star": false,
+            "issuer": "Azzda Technology Solution"
+        },
+        {
+            "year": "Feb 2021",
+            "title": "Responsive Web Design & Professional Web Development (1 Year Course)",
+            "star": false,
+            "issuer": "Creative IT Institute"
+        }
     ]
 }
