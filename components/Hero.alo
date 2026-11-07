@@ -81,7 +81,7 @@
     }
 
     .role {
-        font-size: 18px;
+        font-size: 15.5px;
         color: var(--muted);
         margin: 0 0 22px;
     }
