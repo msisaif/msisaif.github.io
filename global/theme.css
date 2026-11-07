@@ -19,6 +19,7 @@
     --code-bg: #0a1424;
     --nav-bg: rgba(14, 26, 46, 0.86);
     --term-key: #8fb4ff;
+    --alo: #fbbf3c;
 
     --accent: var(--a-fill);
     --accent-soft: rgba(var(--a-rgb), 0.12);
@@ -41,6 +42,7 @@
     --code-bg: #eaeff7;
     --nav-bg: rgba(244, 247, 251, 0.86);
     --term-key: #2563eb;
+    --alo: #b45f06;
 
     --accent-ink: var(--a-ink-l);
     --accent-tint: var(--a-tint-l);
