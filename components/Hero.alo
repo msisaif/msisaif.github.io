@@ -5,7 +5,7 @@
                 <div>
                     <p class="kicker">{{ data.site.location }}</p>
                     <h1>{{ data.hero.name }}</h1>
-                    <p class="role"><b>{{ data.hero.roleBold }}</b> · {{ data.hero.roleRest }}</p>
+                    <p class="role"><b>{{ data.hero.roleBold }}</b> · {{ data.hero.roleRest }} <a class="ext" href="{{ data.hero.roleLinkHref }}" target="_blank" rel="noopener" aria-label="{{ data.hero.roleLinkLabel }} (opens msilabs.github.io)">{{ data.hero.roleLinkLabel }}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p>
                     <p class="lead">{{ data.hero.leadLine }}<br><em>{{ data.hero.leadEmphasis }}</em></p>
                     <div class="chips">
                         <template for="chip in data.hero.chips">
@@ -81,9 +81,29 @@
     }
 
     .role {
-        font-size: 15.5px;
+        font-size: 18px;
         color: var(--muted);
         margin: 0 0 22px;
+    }
+
+    .role a {
+        color: var(--accent-tint);
+        text-decoration: none;
+    }
+
+    .role a:hover {
+        text-decoration: underline;
+    }
+
+    .role .ext {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .role .ext svg {
+        width: 14px;
+        height: 14px;
     }
 
     .role b {

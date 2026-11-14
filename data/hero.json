@@ -1,26 +1,68 @@
 {
     "name": "Md Saiful Islam",
     "roleBold": "Tech Lead @ Digit Gate IT",
-    "roleRest": "Founder, msilabs · Co-Founder, Orbeetal & Ihsan IT",
+    "roleRest": "Founder,",
     "leadLine": "Lead teams. Build products.",
     "leadEmphasis": "Help developers grow.",
     "chips": [
-        { "label": "Tech Lead", "highlight": false },
-        { "label": "Tech Entrepreneur", "highlight": false },
-        { "label": "Certified Software Architecture Trainer (B-TopSE)", "highlight": true }
+        {
+            "label": "Tech Lead",
+            "highlight": false
+        },
+        {
+            "label": "Tech Entrepreneur",
+            "highlight": false
+        },
+        {
+            "label": "Certified Software Architecture Trainer",
+            "highlight": true
+        }
     ],
     "photoAlt": "Md Saiful Islam",
     "whoami": [
-        { "key": "role", "value": "Tech Lead" },
-        { "key": "company", "value": "Digit Gate IT" },
-        { "key": "trainer", "value": "B-TopSE Software Architecture" },
-        { "key": "building", "value": "msilabs (open source)" }
+        {
+            "key": "role",
+            "value": "Tech Lead"
+        },
+        {
+            "key": "company",
+            "value": "Digit Gate IT"
+        },
+        {
+            "key": "trainer",
+            "value": "Software Architecture"
+        },
+        {
+            "key": "building",
+            "value": "msilabs (open source)"
+        }
     ],
-    "stack": ["Laravel", "Vue", "React", "Next.js", "Flutter", "AWS"],
+    "stack": [
+        "Laravel",
+        "Vue",
+        "React",
+        "Next.js",
+        "Flutter",
+        "AWS"
+    ],
     "stats": [
-        { "value": "10+", "label": "developers I lead" },
-        { "value": "25+", "label": "web apps I lead" },
-        { "value": "5+", "label": "mobile apps I lead" },
-        { "value": "2.8K+", "label": "Packagist installs" }
-    ]
+        {
+            "value": "10+",
+            "label": "developers I lead"
+        },
+        {
+            "value": "25+",
+            "label": "web apps I lead"
+        },
+        {
+            "value": "5+",
+            "label": "mobile apps I lead"
+        },
+        {
+            "value": "2.9K+",
+            "label": "Packagist installs"
+        }
+    ],
+    "roleLinkLabel": "msilabs",
+    "roleLinkHref": "https://msilabs.github.io"
 }
