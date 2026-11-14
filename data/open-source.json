@@ -117,7 +117,7 @@
         },
         {
             "id": "editor",
-            "cols": 1,
+            "cols": 2,
             "items": [
                 {
                     "name": "msilabs.alo-vscode",
@@ -132,6 +132,26 @@
                         {
                             "label": "GitHub →",
                             "href": "https://github.com/msilabs/alo-vscode"
+                        }
+                    ]
+                },
+                {
+                    "name": "msilabs.msilabs-theme",
+                    "description": "Four VS Code themes that are easy on the eyes: Dark, Light, Notebook and Warm Night. Navy, mint and an amber cursor.",
+                    "command": "code --install-extension msilabs.msilabs-theme",
+                    "since": "since Nov 2026",
+                    "links": [
+                        {
+                            "label": "Preview →",
+                            "href": "https://msilabs.github.io/msilabs-theme/"
+                        },
+                        {
+                            "label": "Marketplace →",
+                            "href": "https://marketplace.visualstudio.com/items?itemName=msilabs.msilabs-theme"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/msilabs-theme"
                         }
                     ]
                 }
