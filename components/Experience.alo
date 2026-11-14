@@ -29,7 +29,11 @@
                         <span class="tag">{{ venture.tag }}</span>
                         <h3>{{ venture.name }}</h3>
                         <span class="meta">{{ venture.period }}</span>
-                        <p>{{ venture.description }}</p>
+                        <ul class="dots">
+                            <template for="point in venture.points">
+                                <li>{{ point }}</li>
+                            </template>
+                        </ul>
                     </div>
                 </template>
             </div>

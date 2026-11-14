@@ -50,19 +50,28 @@
             "tag": "Founder",
             "name": "msilabs",
             "period": "Nov 2023 – Present",
-            "description": "My personal open-source brand: free developer tools and learning content for web developers, built in my own time."
+            "points": [
+                "Free open-source tools and packages for web developers",
+                "Bangla lessons for developers"
+            ]
         },
         {
             "tag": "Co-Founder",
             "name": "Ihsan IT",
             "period": "Oct 2020 – Present",
-            "description": "SaaS for schools, madrasahs and online businesses. Run by its own dedicated team; I contribute to its long-term vision and strategic direction."
+            "points": [
+                "SaaS products for madrasahs, schools and online businesses",
+                "Run by its own dedicated team"
+            ]
         },
         {
             "tag": "Co-Founder",
             "name": "Orbeetal",
             "period": "Nov 2024 – Present",
-            "description": "Web and mobile development for clients in Bangladesh and abroad, plus SaaS products. Run by its own dedicated team; I support its growth and strategic direction."
+            "points": [
+                "Web and mobile apps for clients in Bangladesh and abroad",
+                "Run by its own dedicated team"
+            ]
         }
     ],
     "volunteer": {
