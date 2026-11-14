@@ -1,4 +1,21 @@
 {
     "heading": "Let's connect",
-    "text": "Happy to connect with developers, founders and anyone working on interesting software problems."
+    "text": "Happy to connect with developers, founders and anyone working on interesting software problems.",
+    "cards": [
+        {
+            "key": "linkedin",
+            "name": "LinkedIn",
+            "note": "Professional network"
+        },
+        {
+            "key": "github",
+            "name": "GitHub",
+            "note": "Personal code and projects"
+        },
+        {
+            "key": "msilabs",
+            "name": "msilabs",
+            "note": "Open source packages, tools"
+        }
+    ]
 }
