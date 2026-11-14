@@ -1,29 +1,208 @@
 {
-    "packages": [
+    "groups": [
         {
-            "tag": "Laravel · PHP · since Jul 2024",
-            "name": "msilabs/bkash",
-            "description": "A Laravel package for bKash Tokenized Checkout v2, with 2.8K+ installs on Packagist. Payments, full and partial refunds, agreement (one-click) payments, query and search.",
-            "command": "composer require msilabs/bkash",
-            "features": ["Multiple merchants", "Token caching", "Bangla errors", "Sandbox validation", "PHP 8.2–8.5", "Laravel 9–13"],
-            "links": [
-                { "label": "GitHub →", "href": "https://github.com/msilabs/bkash" },
-                { "label": "Packagist →", "href": "https://packagist.org/packages/msilabs/bkash" }
+            "id": "payments",
+            "cols": 2,
+            "title": [
+                {
+                    "text": "Packages for "
+                },
+                {
+                    "text": "bKash",
+                    "brand": true
+                },
+                {
+                    "text": " payment gateway"
+                }
+            ],
+            "intro": "Community packages for bKash Tokenized Checkout v2. Not affiliated with bKash.",
+            "meta": [
+                {
+                    "text": "3.5K+ installs and downloads",
+                    "highlight": true
+                },
+                {
+                    "text": "MIT",
+                    "highlight": false
+                }
+            ],
+            "items": [
+                {
+                    "name": "Laravel",
+                    "requires": "PHP 8.2–8.5 · Laravel 9–13",
+                    "command": "composer require msilabs/bkash",
+                    "since": "since Jul 2024",
+                    "links": [
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/bkash"
+                        },
+                        {
+                            "label": "Packagist →",
+                            "href": "https://packagist.org/packages/msilabs/bkash"
+                        }
+                    ]
+                },
+                {
+                    "name": "Node.js",
+                    "requires": "Node.js >= 22",
+                    "command": "npm install @msilabs/bkash",
+                    "since": "since Oct 2026",
+                    "links": [
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/bkash-js"
+                        },
+                        {
+                            "label": "npm →",
+                            "href": "https://www.npmjs.com/package/@msilabs/bkash"
+                        }
+                    ]
+                }
             ]
         },
         {
-            "tag": "Node.js · TypeScript · since Oct 2026",
-            "name": "@msilabs/bkash",
-            "description": "A server-side bKash Tokenized Checkout v2 client for Node.js, Bun, Deno and edge runtimes, with TypeScript types and zero runtime dependencies.",
-            "command": "npm install @msilabs/bkash",
-            "features": ["Zero dependencies", "ESM & CJS", "Pluggable token store", "Express", "NestJS", "Next.js", "Hono"],
-            "links": [
-                { "label": "GitHub →", "href": "https://github.com/msilabs/bkash-js" },
-                { "label": "npm →", "href": "https://www.npmjs.com/package/@msilabs/bkash" }
+            "id": "frameworks",
+            "cols": 2,
+            "title": [
+                {
+                    "text": "Frameworks"
+                }
+            ],
+            "intro": "Static sites and full stack apps, built the msilabs way.",
+            "items": [
+                {
+                    "name": "@msilabs/alo",
+                    "requires": "Node.js >= 22",
+                    "description": "A lightweight static web framework. Plain HTML-like templates, data from JSON, zero config. This site is built with it.",
+                    "command": "npx @msilabs/alo init my-site",
+                    "since": "since Nov 2026",
+                    "links": [
+                        {
+                            "label": "Docs →",
+                            "href": "https://msilabs.github.io/alo/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/alo"
+                        },
+                        {
+                            "label": "npm →",
+                            "href": "https://www.npmjs.com/package/@msilabs/alo"
+                        }
+                    ]
+                },
+                {
+                    "name": "@msilabs/adhar",
+                    "requires": "Node.js >= 22",
+                    "description": "A framework for building APIs, with an optional web front end built on Alo for a full stack setup.",
+                    "command": "npx @msilabs/adhar init my-api",
+                    "since": "since Nov 2026",
+                    "links": [
+                        {
+                            "label": "Docs →",
+                            "href": "https://msilabs.github.io/adhar/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/adhar"
+                        },
+                        {
+                            "label": "npm →",
+                            "href": "https://www.npmjs.com/package/@msilabs/adhar"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "editor",
+            "cols": 1,
+            "items": [
+                {
+                    "name": "msilabs.alo-vscode",
+                    "description": "VS Code extension for Alo and Adhar: syntax highlighting, suggestions, errors with quick fixes, and a dev server.",
+                    "command": "code --install-extension msilabs.alo-vscode",
+                    "since": "since Nov 2026",
+                    "links": [
+                        {
+                            "label": "Marketplace →",
+                            "href": "https://marketplace.visualstudio.com/items?itemName=msilabs.alo-vscode"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/alo-vscode"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tools",
+            "cols": 3,
+            "title": [
+                {
+                    "text": "Tools"
+                }
+            ],
+            "intro": "Free apps that run in your browser. No login.",
+            "items": [
+                {
+                    "name": "CVবানাও",
+                    "lang": "bn",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/msilabs-cv-builder/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/msilabs-cv-builder"
+                        }
+                    ],
+                    "points": [
+                        "ATS-friendly PDF CV, GitHub profile README and portfolio",
+                        "No login, runs in browser"
+                    ]
+                },
+                {
+                    "name": "Git Simulator",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/git-simulator/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/git-simulator"
+                        }
+                    ],
+                    "points": [
+                        "Fake terminal with a live commit graph and Bangla explanations",
+                        "11 hands-on missions"
+                    ]
+                },
+                {
+                    "name": "Scaling Simulator",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/scaling-simulator/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/scaling-simulator"
+                        }
+                    ],
+                    "points": [
+                        "Load balancer, cache, replicas and autoscaling, hands on",
+                        "6 hands-on challenges"
+                    ]
+                }
             ]
         }
     ],
-    "noteBefore": "Community packages, not affiliated with bKash. Free and open source (MIT). More at ",
-    "noteLinkLabel": "github.com/msilabs",
-    "noteLinkHref": "https://github.com/msilabs"
+    "noteBefore": "Free and open source (MIT). Bangla lessons and simulators at ",
+    "noteLinkLabel": "msilabs.github.io/learn",
+    "noteLinkHref": "https://msilabs.github.io/learn/"
 }

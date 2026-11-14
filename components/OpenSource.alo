@@ -2,48 +2,184 @@
     <section id="open-source">
         <div class="wrap">
             <div class="sec-head"><span class="num">03</span><h2>Open source</h2></div>
-            <div class="grid2">
-                <template for="pkg in data.openSource.packages">
-                    <div class="panel pkg">
-                        <span class="tag">{{ pkg.tag }}</span>
-                        <h3>{{ pkg.name }}</h3>
-                        <p>{{ pkg.description }}</p>
-                        <div class="cmd">{{ pkg.command }}</div>
-                        <div class="feat">
-                            <template for="feature in pkg.features">
-                                <span>{{ feature }}</span>
+            <template for="group in data.openSource.groups">
+                <div class="grp">
+                    <template if="group.title">
+                        <div class="grp-head">
+                            <h3>
+                                <template for="part in group.title">
+                                    <span class="{{ part.brand ? 'brand-bkash' : '' }}">{{ part.text }}</span>
+                                </template>
+                            </h3>
+                            <p>{{ group.intro }}</p>
+                        </div>
+                    </template>
+                    <template if="group.meta">
+                        <div class="meta">
+                            <template for="chip in group.meta">
+                                <span class="{{ chip.highlight ? 'hl' : '' }}">{{ chip.text }}</span>
                             </template>
                         </div>
-                        <div class="lnks">
-                            <template for="link in pkg.links">
-                                <a href="{{ link.href }}" target="_blank" rel="noopener">{{ link.label }}</a>
-                            </template>
-                        </div>
+                    </template>
+                    <div class="items cols-{{ group.cols }}">
+                        <template for="item in group.items">
+                            <div class="panel item">
+                                <div class="item-top">
+                                    <h4 lang="{{ item.lang }}">{{ item.name }}</h4>
+                                    <span class="req">{{ item.requires }}</span>
+                                </div>
+                                <template if="item.description">
+                                    <p class="desc">{{ item.description }}</p>
+                                </template>
+                                <template if="item.points">
+                                    <ul class="dots">
+                                        <template for="point in item.points">
+                                            <li>{{ point }}</li>
+                                        </template>
+                                    </ul>
+                                </template>
+                                <template if="item.command">
+                                    <div class="cmd">{{ item.command }}</div>
+                                </template>
+                                <div class="item-foot">
+                                    <span class="since">{{ item.since }}</span>
+                                    <div class="lnks">
+                                        <template for="link in item.links">
+                                            <a href="{{ link.href }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
                     </div>
-                </template>
-            </div>
+                </div>
+            </template>
             <p class="note">{{ data.openSource.noteBefore }}<a href="{{ data.openSource.noteLinkHref }}" target="_blank" rel="noopener">{{ data.openSource.noteLinkLabel }}</a>.</p>
         </div>
     </section>
 </template>
 
 <style>
-    .pkg {
+    .grp {
+        margin-top: 36px;
+    }
+
+    .grp:first-of-type {
+        margin-top: 0;
+    }
+
+    .grp-head {
+        margin-bottom: 14px;
+    }
+
+    .grp-head h3 {
+        margin: 0 0 2px;
+        font-size: 20px;
+        color: var(--text);
+    }
+
+    .grp-head p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--dim);
+    }
+
+    .brand-bkash {
+        color: #e2136e;
+    }
+
+    .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 14px;
+    }
+
+    .meta span {
+        font-size: 12px;
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: var(--bg2);
+        border: 1px solid var(--line);
+        color: var(--muted);
+    }
+
+    .meta span.hl {
+        border-color: var(--accent-line);
+        background: var(--accent-soft);
+        color: var(--accent-tint);
+    }
+
+    .items {
+        display: grid;
+        gap: 16px;
+    }
+
+    .cols-1 {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .item {
         display: flex;
         flex-direction: column;
         min-width: 0;
     }
 
-    .pkg h3 {
-        font-family: var(--mono);
-        font-size: 18px;
-        margin: 0 0 6px;
+    .item-top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4px 12px;
+        margin-bottom: 8px;
     }
 
-    .pkg p {
+    .item h4 {
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .req {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--muted);
+    }
+
+    .desc {
         margin: 0 0 14px;
         color: var(--text-soft);
         font-size: 15px;
+    }
+
+    .dots {
+        margin: 0 0 14px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .dots li {
+        position: relative;
+        padding-left: 18px;
+        color: var(--text-soft);
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    .dots li::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        top: 3px;
+        font-size: 12px;
+        color: var(--accent-ink);
     }
 
     .cmd {
@@ -64,42 +200,47 @@
         color: var(--dim);
     }
 
-    .pkg .feat {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        margin-bottom: 16px;
-    }
-
-    .pkg .feat span {
-        font-size: 12px;
-        padding: 3px 9px;
-        border-radius: 999px;
-        background: var(--bg2);
-        border: 1px solid var(--line);
-        color: var(--muted);
-    }
-
-    .pkg .lnks {
+    .item-foot {
         margin-top: auto;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4px 12px;
+    }
+
+    .since {
+        font-size: 13px;
+        color: var(--dim);
+    }
+
+    .lnks {
+        display: flex;
         gap: 16px;
+        margin-left: auto;
         font-size: 14px;
         font-weight: 600;
     }
 
-    .pkg .lnks a {
+    .lnks a {
         text-decoration: none;
         color: var(--accent-tint);
     }
 
-    .pkg .lnks a:hover {
+    .lnks a:hover {
         text-decoration: underline;
     }
 
     .note {
         font-size: 13px;
         color: var(--dim);
-        margin-top: 14px;
+        margin-top: 28px;
+    }
+
+    @media (max-width: 900px) {
+        .cols-2,
+        .cols-3 {
+            grid-template-columns: minmax(0, 1fr);
+        }
     }
 </style>
