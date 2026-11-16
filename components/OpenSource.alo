@@ -39,7 +39,10 @@
                                     </ul>
                                 </template>
                                 <template if="item.command">
-                                    <div class="cmd">{{ item.command }}</div>
+                                    <div class="cmd">
+                                        <code>{{ item.command }}</code>
+                                        <button class="copy" type="button" data-copy="{{ item.command }}" aria-label="Copy install command"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+                                    </div>
                                 </template>
                                 <div class="item-foot">
                                     <span class="since">{{ item.since }}</span>
@@ -96,8 +99,8 @@
     }
 
     .meta span {
-        font-size: 12px;
-        padding: 3px 9px;
+        font-size: 15px;
+        padding: 5px 12px;
         border-radius: 999px;
         background: var(--bg2);
         border: 1px solid var(--line);
@@ -112,7 +115,7 @@
 
     .items {
         display: grid;
-        gap: 16px;
+        gap: 24px;
     }
 
     .cols-1 {
@@ -131,6 +134,7 @@
         display: flex;
         flex-direction: column;
         min-width: 0;
+        min-height: 260px;
     }
 
     .item-top {
@@ -144,19 +148,19 @@
 
     .item h4 {
         margin: 0;
-        font-size: 17px;
+        font-size: 19px;
     }
 
     .req {
         font-family: var(--mono);
-        font-size: 12px;
+        font-size: 13px;
         color: var(--muted);
     }
 
     .desc {
         margin: 0 0 14px;
         color: var(--text-soft);
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .dots {
@@ -183,21 +187,62 @@
     }
 
     .cmd {
-        font-family: var(--mono);
-        font-size: 13px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
         background: var(--code-bg);
         border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 10px 12px;
-        color: var(--accent-tint);
-        overflow-x: auto;
-        white-space: nowrap;
+        padding: 6px 6px 6px 12px;
         margin-bottom: 14px;
     }
 
-    .cmd::before {
+    .cmd code {
+        flex: 1;
+        min-width: 0;
+        font-family: var(--mono);
+        font-size: 14px;
+        color: var(--accent-tint);
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 6px 0;
+    }
+
+    .cmd code::before {
         content: '$ ';
         color: var(--dim);
+    }
+
+    .copy {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        background: var(--bg2);
+        color: var(--text);
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        cursor: pointer;
+        transition: background 0.15s, color 0.15s;
+    }
+
+    .copy:hover {
+        border-color: var(--accent-line);
+        color: var(--accent-tint);
+    }
+
+    .copy svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .copy.ok {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--on-accent);
     }
 
     .item-foot {
@@ -231,6 +276,17 @@
         text-decoration: underline;
     }
 
+    @media (hover: hover) and (min-width: 901px) {
+        .item {
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .item:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-line);
+        }
+    }
+
     .note {
         font-size: 13px;
         color: var(--dim);
@@ -243,4 +299,130 @@
             grid-template-columns: minmax(0, 1fr);
         }
     }
+
+    @media (min-width: 601px) and (max-width: 900px) {
+        .item h4 {
+            font-size: 18px;
+        }
+
+        .desc {
+            font-size: 15px;
+        }
+
+        .meta span {
+            font-size: 13px;
+        }
+
+        .req {
+            font-size: 12px;
+        }
+
+        .cmd code {
+            font-size: 13px;
+        }
+
+        .lnks {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .item {
+            padding: 20px;
+            min-height: auto;
+        }
+
+        .items {
+            gap: 16px;
+        }
+
+        .cmd {
+            gap: 6px;
+            padding: 4px 4px 4px 10px;
+        }
+
+        .copy {
+            width: 28px;
+            height: 28px;
+        }
+
+        .copy svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .grp-head p {
+            font-size: 15px;
+        }
+        .lnks {
+            font-size: 12px;
+        }
+        .meta span,
+        .req {
+            font-size: 13px;
+        }
+        .desc {
+            font-size: 14px;
+        }
+        .dots li {
+            font-size: 16px;
+        }
+        .cmd code {
+            font-size: 12px;
+        }
+        .since {
+            font-size: 12px;
+        }
+        .note {
+            font-size: 14px;
+        }
+        .item h4 {
+            font-size: 18px;
+        }
+    }
 </style>
+
+<script>
+    function fallbackCopy(text) {
+        const area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', '');
+        area.style.position = 'fixed';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        try {
+            document.execCommand('copy');
+        } catch (e) {}
+        document.body.removeChild(area);
+    }
+
+    const copyIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+    const checkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>`;
+
+    function showCopied(button) {
+        button.innerHTML = checkIcon;
+        button.classList.add('ok');
+        setTimeout(() => {
+            button.innerHTML = copyIcon;
+            button.classList.remove('ok');
+        }, 1600);
+    }
+
+    $el.querySelectorAll('.copy').forEach((button) => {
+        button.addEventListener('click', () => {
+            const text = button.getAttribute('data-copy');
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => showCopied(button), () => {
+                    fallbackCopy(text);
+                    showCopied(button);
+                });
+            } else {
+                fallbackCopy(text);
+                showCopied(button);
+            }
+        });
+    });
+</script>

@@ -39,10 +39,27 @@
             </div>
 
             <div class="panel mini volunteer">
-                <span class="tag">{{ data.experience.volunteer.tag }}</span>
-                <h3>{{ data.experience.volunteer.title }}</h3>
-                <span class="meta">{{ data.experience.volunteer.period }}</span>
-                <p>{{ data.experience.volunteer.before }}<a href="{{ data.experience.volunteer.linkHref }}" target="_blank" rel="noopener">{{ data.experience.volunteer.linkLabel }}</a>{{ data.experience.volunteer.after }}</p>
+                <div class="vol-head">
+                    <span class="tag">{{ data.experience.volunteer.tag }}</span>
+                    <h3>{{ data.experience.volunteer.title }}</h3>
+                    <span class="vol-org">{{ data.experience.volunteer.org }}</span>
+                    <span class="meta">{{ data.experience.volunteer.period }}</span>
+                </div>
+                <div class="vol-body">
+                    <ul class="dots">
+                        <template for="point in data.experience.volunteer.points">
+                            <li>
+                                <template if="point.linkHref">{{ point.before }}<a class="vol-link" href="{{ point.linkHref }}" target="_blank" rel="noopener">{{ point.linkLabel }}</a>{{ point.after }}</template>
+                                <template else>{{ point.text }}</template>
+                            </li>
+                        </template>
+                    </ul>
+                    <ul class="chips">
+                        <template for="tech in data.experience.volunteer.stack">
+                            <li>{{ tech }}</li>
+                        </template>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -151,5 +168,72 @@
 
     .volunteer {
         margin-top: 16px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+        gap: 12px 40px;
+        align-items: start;
+        border-left: 3px solid var(--accent);
+    }
+
+    .vol-org {
+        display: block;
+        margin-top: 2px;
+        font-size: 15px;
+        color: var(--muted);
+    }
+
+    .vol-body .dots {
+        margin: 0 0 16px;
+    }
+
+    .vol-link {
+        display: inline-block;
+        padding: 0 8px;
+        border-radius: 6px;
+        background: var(--accent-soft);
+        color: var(--accent-tint);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .vol-link:hover {
+        background: var(--accent-line);
+    }
+
+    .chips {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .chips li {
+        font-family: var(--mono);
+        font-size: 13px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--bg2);
+        border: 1px solid var(--line);
+        color: var(--accent-tint);
+    }
+
+    @media (max-width: 600px) {
+        .volunteer {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 8px;
+        }
+
+        .meta {
+            font-size: 14px;
+        }
+        .role-item h4 {
+            font-size: 17px;
+        }
+        .mini p,
+        ul.dots li {
+            font-size: 16px;
+        }
     }
 </style>

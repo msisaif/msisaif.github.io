@@ -266,6 +266,15 @@
             border-bottom: 0;
         }
     }
+
+    @media (max-width: 600px) {
+        .links a {
+            font-size: 15px;
+        }
+        .custom {
+            font-size: 14px;
+        }
+    }
 </style>
 
 <script>

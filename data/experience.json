@@ -12,7 +12,7 @@
                     "Run requirement analysis with clients and stakeholders, turning business needs into technical specs",
                     "Design and evaluate system architecture across web and mobile projects",
                     "Manage AWS infrastructure: deployment, monitoring, security and cost",
-                    "Lead a portfolio of 25+ web and 5+ mobile apps in production, including LMS and e-commerce platforms live for 5+ years"
+                    "Lead a portfolio of 30+ web and 5+ mobile apps in production, including LMS and e-commerce platforms live for 5+ years"
                 ]
             },
             {
@@ -76,11 +76,24 @@
     ],
     "volunteer": {
         "tag": "Volunteer",
-        "title": "Volunteer Web Developer · The Message Academy",
+        "title": "Volunteer Web Developer",
         "period": "Nov 2021 – Nov 2022",
-        "before": "Built the initial version of ",
-        "linkLabel": "MessageBD.net",
-        "linkHref": "https://messagebd.net",
-        "after": ", an Islamic knowledge platform offering Quran and Hadith resources, articles, videos and lectures in Bangla, with Laravel, Inertia.js, Vue.js and MySQL."
+        "stack": [
+            "Laravel",
+            "Vue.js",
+            "MySQL"
+        ],
+        "org": "The Message Academy",
+        "points": [
+            {
+                "before": "Built the initial version of ",
+                "linkLabel": "MessageBD.net",
+                "linkHref": "https://messagebd.net",
+                "after": ""
+            },
+            {
+                "text": "Quran, Hadith, articles and courses in Bangla"
+            }
+        ]
     }
 }
