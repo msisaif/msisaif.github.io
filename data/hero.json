@@ -47,20 +47,24 @@
     ],
     "stats": [
         {
+            "value": "6+",
+            "label": "years experience",
+            "icon": "clock"
+        },
+        {
             "value": "10+",
-            "label": "developers I lead"
+            "label": "developers I lead",
+            "icon": "people"
         },
         {
-            "value": "25+",
-            "label": "web apps I lead"
+            "value": "35+",
+            "label": "projects I lead",
+            "icon": "folder"
         },
         {
-            "value": "5+",
-            "label": "mobile apps I lead"
-        },
-        {
-            "value": "2.9K+",
-            "label": "Packagist installs"
+            "value": "6.3K+",
+            "label": "open-source installs",
+            "icon": "download"
         }
     ],
     "roleLinkLabel": "msilabs",

@@ -95,4 +95,11 @@
         font-size: 12px;
         top: 3px;
     }
+
+    @media (max-width: 600px) {
+        .note-card p,
+        ul.dots li {
+            font-size: 16px;
+        }
+    }
 </style>

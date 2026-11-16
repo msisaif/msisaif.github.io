@@ -68,4 +68,14 @@
             grid-template-columns: 1fr;
         }
     }
+
+    @media (max-width: 600px) {
+        .skill-row dt,
+        .skill-row dd small {
+            font-size: 14px;
+        }
+        .skill-row dd span {
+            font-size: 15px;
+        }
+    }
 </style>

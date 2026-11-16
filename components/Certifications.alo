@@ -64,4 +64,15 @@
     .badge-star {
         color: var(--accent-ink);
     }
+
+    @media (max-width: 600px) {
+        .cert h4 {
+            font-size: 16px;
+        }
+        .cert .yr,
+        .cert p,
+        .cert a {
+            font-size: 14px;
+        }
+    }
 </style>

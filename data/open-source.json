@@ -18,7 +18,7 @@
             "intro": "Community packages for bKash Tokenized Checkout v2. Not affiliated with bKash.",
             "meta": [
                 {
-                    "text": "3.5K+ installs and downloads",
+                    "text": "3.5K+ downloads (Laravel + Node.js)",
                     "highlight": true
                 },
                 {
@@ -31,7 +31,7 @@
                     "name": "Laravel",
                     "requires": "PHP 8.2–8.5 · Laravel 9–13",
                     "command": "composer require msilabs/bkash",
-                    "since": "since Jul 2024",
+                    "since": "Since Jul 2024",
                     "links": [
                         {
                             "label": "GitHub →",
@@ -47,7 +47,7 @@
                     "name": "Node.js",
                     "requires": "Node.js >= 22",
                     "command": "npm install @msilabs/bkash",
-                    "since": "since Oct 2026",
+                    "since": "Since Oct 2026",
                     "links": [
                         {
                             "label": "GitHub →",
@@ -70,13 +70,19 @@
                 }
             ],
             "intro": "Static sites and full stack apps, built the msilabs way.",
+            "meta": [
+                {
+                    "text": "2.8K+ downloads (Alo + Adhar)",
+                    "highlight": true
+                }
+            ],
             "items": [
                 {
                     "name": "@msilabs/alo",
                     "requires": "Node.js >= 22",
                     "description": "A lightweight static web framework. Plain HTML-like templates, data from JSON, zero config. This site is built with it.",
                     "command": "npx @msilabs/alo init my-site",
-                    "since": "since Nov 2026",
+                    "since": "Since Nov 2026",
                     "links": [
                         {
                             "label": "Docs →",
@@ -97,7 +103,7 @@
                     "requires": "Node.js >= 22",
                     "description": "A framework for building APIs, with an optional web front end built on Alo for a full stack setup.",
                     "command": "npx @msilabs/adhar init my-api",
-                    "since": "since Nov 2026",
+                    "since": "Since Nov 2026",
                     "links": [
                         {
                             "label": "Docs →",
@@ -121,41 +127,43 @@
             "items": [
                 {
                     "name": "msilabs.alo-vscode",
-                    "description": "VS Code extension for Alo and Adhar: syntax highlighting, suggestions, errors with quick fixes, and a dev server.",
+                    "description": "VS Code extension for Alo and Adhar: highlighting, suggestions and errors.",
                     "command": "code --install-extension msilabs.alo-vscode",
-                    "since": "since Nov 2026",
+                    "since": "Since Nov 2026",
                     "links": [
                         {
                             "label": "Marketplace →",
                             "href": "https://marketplace.visualstudio.com/items?itemName=msilabs.alo-vscode"
                         },
                         {
-                            "label": "GitHub →",
-                            "href": "https://github.com/msilabs/alo-vscode"
+                            "label": "Open VSX →",
+                            "href": "https://open-vsx.org/extension/msilabs/alo-vscode"
                         }
                     ]
                 },
                 {
                     "name": "msilabs.msilabs-theme",
-                    "description": "Four VS Code themes that are easy on the eyes: Dark, Light, Notebook and Warm Night. Navy, mint and an amber cursor.",
+                    "description": "Four easy-on-the-eyes VS Code themes: Dark, Light, Notebook and Warm Night.",
                     "command": "code --install-extension msilabs.msilabs-theme",
-                    "since": "since Nov 2026",
+                    "since": "Since Nov 2026",
                     "links": [
-                        {
-                            "label": "Preview →",
-                            "href": "https://msilabs.github.io/msilabs-theme/"
-                        },
                         {
                             "label": "Marketplace →",
                             "href": "https://marketplace.visualstudio.com/items?itemName=msilabs.msilabs-theme"
                         },
                         {
-                            "label": "GitHub →",
-                            "href": "https://github.com/msilabs/msilabs-theme"
+                            "label": "Open VSX →",
+                            "href": "https://open-vsx.org/extension/msilabs/msilabs-theme"
                         }
                     ]
                 }
-            ]
+            ],
+            "title": [
+                {
+                    "text": "Editor"
+                }
+            ],
+            "intro": "VS Code extension and theme for Alo and Adhar projects."
         },
         {
             "id": "tools",
