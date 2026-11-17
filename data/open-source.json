@@ -211,6 +211,40 @@
                     ]
                 },
                 {
+                    "name": "SQL Playground",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/sql-playground/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/sql-playground"
+                        }
+                    ],
+                    "points": [
+                        "Real SQLite in the browser with a step-by-step query visualizer",
+                        "Bangla explanations and 11 missions"
+                    ]
+                },
+                {
+                    "name": "Regex Lab",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/regex-lab/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/regex-lab"
+                        }
+                    ],
+                    "points": [
+                        "Ready patterns for Bangladeshi phone, NID and Taka amounts",
+                        "16 lessons and 15 challenges in Bangla"
+                    ]
+                },
+                {
                     "name": "Scaling Simulator",
                     "links": [
                         {
@@ -225,6 +259,23 @@
                     "points": [
                         "Load balancer, cache, replicas and autoscaling, hands on",
                         "6 hands-on challenges"
+                    ]
+                },
+                {
+                    "name": "QR Code Generator",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/qr-code-generator/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/qr-code-generator"
+                        }
+                    ],
+                    "points": [
+                        "QR codes for links, Wi-Fi, email, calls and SMS, with your logo",
+                        "PNG or print-ready SVG, runs in browser"
                     ]
                 }
             ]
