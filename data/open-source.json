@@ -189,76 +189,9 @@
                         }
                     ],
                     "points": [
-                        "ATS-friendly PDF CV, GitHub profile README and portfolio",
-                        "No login, runs in browser"
-                    ]
-                },
-                {
-                    "name": "Git Simulator",
-                    "links": [
-                        {
-                            "label": "Open →",
-                            "href": "https://msilabs.github.io/git-simulator/"
-                        },
-                        {
-                            "label": "GitHub →",
-                            "href": "https://github.com/msilabs/git-simulator"
-                        }
-                    ],
-                    "points": [
-                        "Fake terminal with a live commit graph and Bangla explanations",
-                        "11 hands-on missions"
-                    ]
-                },
-                {
-                    "name": "SQL Playground",
-                    "links": [
-                        {
-                            "label": "Open →",
-                            "href": "https://msilabs.github.io/sql-playground/"
-                        },
-                        {
-                            "label": "GitHub →",
-                            "href": "https://github.com/msilabs/sql-playground"
-                        }
-                    ],
-                    "points": [
-                        "Real SQLite in the browser with a step-by-step query visualizer",
-                        "Bangla explanations and 11 missions"
-                    ]
-                },
-                {
-                    "name": "Regex Lab",
-                    "links": [
-                        {
-                            "label": "Open →",
-                            "href": "https://msilabs.github.io/regex-lab/"
-                        },
-                        {
-                            "label": "GitHub →",
-                            "href": "https://github.com/msilabs/regex-lab"
-                        }
-                    ],
-                    "points": [
-                        "Ready patterns for Bangladeshi phone, NID and Taka amounts",
-                        "16 lessons and 15 challenges in Bangla"
-                    ]
-                },
-                {
-                    "name": "Scaling Simulator",
-                    "links": [
-                        {
-                            "label": "Open →",
-                            "href": "https://msilabs.github.io/scaling-simulator/"
-                        },
-                        {
-                            "label": "GitHub →",
-                            "href": "https://github.com/msilabs/scaling-simulator"
-                        }
-                    ],
-                    "points": [
-                        "Load balancer, cache, replicas and autoscaling, hands on",
-                        "6 hands-on challenges"
+                        "ATS-friendly PDF CV with 6 templates",
+                        "Also builds a GitHub profile README and portfolio",
+                        "Bangladeshi formats, no login, runs in browser"
                     ]
                 },
                 {
@@ -274,8 +207,111 @@
                         }
                     ],
                     "points": [
-                        "QR codes for links, Wi-Fi, email, calls and SMS, with your logo",
+                        "QR codes for links, Wi-Fi, email, calls and SMS",
+                        "Add your own logo in the middle, the code still scans",
                         "PNG or print-ready SVG, runs in browser"
+                    ]
+                },
+                {
+                    "name": "Code Poster",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/code-poster/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/code-poster"
+                        }
+                    ],
+                    "points": [
+                        "Paste code, get a Bangla poster in seconds",
+                        "Sizes for Facebook and LinkedIn posts",
+                        "Save as PNG or copy the image, runs in browser"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "learning",
+            "cols": 2,
+            "title": [
+                {
+                    "text": "Learning"
+                }
+            ],
+            "intro": "Hands-on simulators with Bangla explanations. No login.",
+            "items": [
+                {
+                    "name": "Regex Lab",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/regex-lab/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/regex-lab"
+                        }
+                    ],
+                    "points": [
+                        "Ready patterns for Bangladeshi phone, NID and Taka",
+                        "Every part of a pattern explained in Bangla",
+                        "16 lessons and 15 challenges"
+                    ]
+                },
+                {
+                    "name": "Linux Simulator",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/linux-simulator/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/linux-simulator"
+                        }
+                    ],
+                    "points": [
+                        "Fake terminal, nothing to install, undo any mistake",
+                        "Every command explained in Bangla",
+                        "16 lessons and 15 challenges"
+                    ]
+                },
+                {
+                    "name": "SQL Playground",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/sql-playground/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/sql-playground"
+                        }
+                    ],
+                    "points": [
+                        "Real SQLite in the browser, nothing to install",
+                        "Step-by-step visualizer for how a query runs",
+                        "35 lessons and 28 challenges in Bangla"
+                    ]
+                },
+                {
+                    "name": "Git Simulator",
+                    "links": [
+                        {
+                            "label": "Open →",
+                            "href": "https://msilabs.github.io/git-simulator/"
+                        },
+                        {
+                            "label": "GitHub →",
+                            "href": "https://github.com/msilabs/git-simulator"
+                        }
+                    ],
+                    "points": [
+                        "Fake terminal with a live commit graph",
+                        "Every command explained in Bangla",
+                        "11 hands-on missions"
                     ]
                 }
             ]
